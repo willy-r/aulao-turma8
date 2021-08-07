@@ -1,0 +1,123 @@
+/* Resets */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul { list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ul li::before {
+  display: inline-block;
+  content: "🦉";
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+} */
+
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  margin-bottom: 40px;
+  background-color: orange;
+}
+
+.logo {
+  font-size: 60px;
+}
+
+.nav {
+  width: 25%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.links a:hover {
+  color: tomato;
+  transform: scale(1.2);
+}
+
+
+/* Section */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-decoration-line: underline;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 54px;
+  gap: 40px;
+
+  /*
+    Não usar (brincadeira).
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  */
+}
+
+.card > img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  border: 5px ridge blue;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  font-size: 2rem;
+  transition: 300ms cubic-bezier(.28,-0.82,.8,1.99);
+}
+
+.card:hover {
+  transform: scale(1.2);
+}

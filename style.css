@@ -88,6 +88,15 @@ img {
   text-decoration-line: underline;
 }
 
+.no-pets {
+  padding: 5px;
+  color: red;
+  font-size: 30px;
+  font-weight: 900;
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
